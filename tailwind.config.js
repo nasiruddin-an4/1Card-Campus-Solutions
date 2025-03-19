@@ -19,6 +19,15 @@ export default {
       backgroundSize: {
         'dot-grid': "20px 20px",
       },
+      animation: {
+        marquee: "marquee 50s linear infinite", // Custom animation
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }, // Moves half the width
+        },
+      },
     },
   },
   plugins: [],
