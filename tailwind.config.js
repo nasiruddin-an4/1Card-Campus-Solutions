@@ -13,6 +13,12 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
+      backgroundImage: {
+        'dot-pattern': "radial-gradient(circle, #e5e7eb 1px, transparent 1px)",
+      },
+      backgroundSize: {
+        'dot-grid': "20px 20px",
+      },
     },
   },
   plugins: [],

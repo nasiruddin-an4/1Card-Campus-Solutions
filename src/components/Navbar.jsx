@@ -12,7 +12,7 @@ const Navbar = () => {
       
       <nav className="fixed w-full py-2 z-20">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between h-16 bg-white px-5 shadow-md rounded-2xl">
+          <div className="flex items-center justify-between h-16 bg-white px-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <div className="flex-shrink-0">
               <a href="#">
                 <img src="src/assets/Logo.avif" alt="1Card Logo" className="h-8" />
