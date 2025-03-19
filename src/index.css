@@ -59,3 +59,55 @@
 .animate-marquee-right {
   animation: marquee-right 30s linear infinite;
 }
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #fff; /* White background */
+  padding: 20px 0; /* Vertical padding */
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap; /* Prevent wrapping */
+  animation: marquee 50s linear infinite; /* Infinite scroll animation */
+}
+
+/* Style for each logo */
+.marquee-logo {
+  height: 50px; /* Adjust height as needed */
+  margin: 0 20px; /* Spacing between logos */
+  flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+/* Animation for scrolling */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move half the width for seamless loop */
+  }
+}
+
+/* White fade effect on left and right */
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px; /* Width of the fade area */
+  height: 100%;
+  z-index: 1;
+}
+
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
