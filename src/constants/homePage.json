@@ -40,5 +40,35 @@
         "src": "src/assets/4.avif",
         "alt": "Client Logo 8"
       }
+    ],
+    "impressiveStats": {
+    "title": "Our Results in Numbers",
+    "subtitle": "Discover the real impact 1Card has made on campus management, security, and financial transactions across our growing community.",
+    "stats": [
+      {
+        "color": "text-blue-400",
+        "number": "80%",
+        "title": "of Partner Campuses Reduce Overhead Costs",
+        "description": "By unifying credential management and payment processing, 1Card streamlines campus operations, saving valuable time and resources."
+      },
+      {
+        "color": "text-green-400",
+        "number": "$1.6M +",
+        "title": "in Total Digital Transactions Processed",
+        "description": "Our secure payment infrastructure handles thousands of transactions daily, ensuring quick, cashless payments for students and staff."
+      },
+      {
+        "color": "text-orange-400",
+        "number": "95%",
+        "title": "of Users Report a More Convenient Campus Experience",
+        "description": "From canteen bills to parking, 1Card simplifies campus life with a single, all-in-one solution."
+      },
+      {
+        "color": "text-purple-400",
+        "number": "2.8M +",
+        "title": "Secure ID Verifications Completed",
+        "description": "Our system verifies identities across multiple campus facilities, ensuring safety and security for everyone."
+      }
     ]
+  }
   }

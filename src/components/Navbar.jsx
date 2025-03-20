@@ -8,11 +8,11 @@ const Navbar = () => {
   
   return (
     <div className='relative'>
-      <div className="fixed top-0 left-0 w-full h-12 bg-gradient-to-b from-white via-white to-transparent z-10"></div>
+      <div className="bg-gradient-to-b h-12 w-full fixed from-white left-0 to-transparent top-0 via-white z-40"></div>
       
-      <nav className="fixed w-full py-2 z-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between h-16 bg-white px-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+      <nav className="w-full fixed py-2 z-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex bg-white h-16 justify-between rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] items-center px-5">
             <div className="flex-shrink-0">
               <a href="#">
                 <img src="src/assets/Logo.avif" alt="1Card Logo" className="h-8" />
@@ -20,12 +20,12 @@ const Navbar = () => {
             </div>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden items-center md:flex space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm text-gray-500 hover:text-primary transition-colors duration-300"
+                  className="text-gray-500 text-sm duration-300 hover:text-primary transition-colors"
                 >
                   {link.name}
                 </a>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-primary focus:outline-none"
+                className="justify-center p-2 rounded-md text-gray-500 focus:outline-none hover:text-primary inline-flex items-center"
               >
                 {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
               </button>
@@ -45,13 +45,13 @@ const Navbar = () => {
           
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden bg-white rounded-xl shadow-lg mt-2">
-              <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="bg-white rounded-xl shadow-lg md:hidden mt-2">
+              <div className="pb-3 pt-2 px-2 space-y-1">
                 {navLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
-                    className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-300"
+                    className="text-gray-600 block duration-300 hover:text-primary px-3 py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}

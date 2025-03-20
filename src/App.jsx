@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import VideoModal from './components/VideoModal';
 import Footer from './components/Footer';
+import ImpressiveStats from './components/ImpressiveStats'
 
 function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -21,7 +22,8 @@ function App() {
       <main className=''>
         <Hero />
         <ClientLogoMarquee />
-        <Stats />
+        <ImpressiveStats />
+        {/* <Stats /> */}
         <Features />
         <LogoMarquee />
         <TabSection />
