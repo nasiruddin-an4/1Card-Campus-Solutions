@@ -93,9 +93,12 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
-          <button className="bg-gradient-to-b from-blue-600 to-black text-white font-medium px-8 py-3 rounded-md transition transform hover:scale-105 hover:opacity-90">
+          <a
+            href="#"
+            className="bg-gradient-to-b from-blue-600 to-black text-white font-medium px-8 py-3 rounded-md transition transform hover:scale-105 hover:opacity-90"
+          >
             Book a Demo
-          </button>
+          </a>
           <button
             onClick={() => setIsModalOpen(true)}
             className="flex items-center text-gray-800 font-medium hover:text-indigo-900 transition transform hover:scale-105 group"
@@ -112,10 +115,10 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="mt-5 flex justify-center"
+        className="flex justify-center"
       >
         <img
-          src="src/assets/Phone Image.avif"
+          src="src/assets/hero image.avif"
           alt="1Card Mobile App"
           className=""
         />
