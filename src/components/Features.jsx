@@ -111,7 +111,7 @@ const Features = () => {
           {/* Left Colum  */}
           <div className="lg:w-1/2">
             <img
-              src="src/assets/payments.svg"
+              src="src/assets/rent.svg"
               alt="Smart payment interface"
               className="rounded-lg shadow-lg w-full"
             />
@@ -171,7 +171,7 @@ const Features = () => {
               href="#"
               className="bg-gradient-to-b from-blue-600 to-black text-white font-medium px-8 py-3 rounded-md transition transform hover:scale-105 hover:opacity-90"
             >
-              Learn More
+              Read More About This
             </a>
           </div>
         </div>
@@ -182,14 +182,13 @@ const Features = () => {
           <div className="lg:w-1/2">
             <div className="bg-yellow-500 text-black text-sm px-3 py-1 rounded-full inline-flex items-center justify-center mb-6">
               <span className="w-1 h-1 bg-green-500 rounded-full mr-2"></span>
-              <span>Campus Access</span>
+              <span>Financial Management</span>
             </div>
             <h2 className="text-3xl text-gray-900 font-bold mb-4">
-              Smart Access Control
+            Flexible Payment Options
             </h2>
             <p className="text-gray-600 mb-8">
-              Use your 1Card to access buildings, labs, and facilities across
-              campus. Enhanced security meets convenience.
+            Whether you’re recharging your 1Card balance or paying tuition, we offer a variety of convenient, cashless solutions to keep you moving on campus.
             </p>
 
             <div className="grid grid-cols-1 gap-4 mb-8 md:grid-cols-2">
@@ -198,7 +197,7 @@ const Features = () => {
                   <HiCheckCircle className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Building Access</p>
+                  <p className="text-gray-900 font-medium">Top-Up Convenience</p>
                 </div>
               </div>
               <div className="flex bg-white border border-gray-200 p-4 rounded-lg items-center">
@@ -206,7 +205,7 @@ const Features = () => {
                   <HiCheckCircle className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Lab Entry</p>
+                  <p className="text-gray-900 font-medium">Credit-Based Services</p>
                 </div>
               </div>
               <div className="flex bg-white border border-gray-200 p-4 rounded-lg items-center">
@@ -214,7 +213,7 @@ const Features = () => {
                   <HiCheckCircle className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Access Logs</p>
+                  <p className="text-gray-900 font-medium">Instant Payment Confirmation</p>
                 </div>
               </div>
               <div className="flex bg-white border border-gray-200 p-4 rounded-lg items-center">
@@ -222,7 +221,7 @@ const Features = () => {
                   <HiCheckCircle className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Security Controls</p>
+                  <p className="text-gray-900 font-medium">Visual Spending Alerts</p>
                 </div>
               </div>
             </div>
@@ -231,14 +230,14 @@ const Features = () => {
               href="#"
               className="bg-gradient-to-b from-blue-600 to-black text-white font-medium px-8 py-3 rounded-md transition transform hover:scale-105 hover:opacity-90"
             >
-              Discover More
+              Read More About This
             </a>
           </div>
 
           {/* Right Column */}
           <div className="lg:w-1/2">
             <img
-              src="src/assets/access.svg"
+              src="src/assets/rent.svg"
               alt="Campus access control system"
               className="rounded-lg shadow-lg w-full"
             />

@@ -18,6 +18,23 @@ export default {
       },
       backgroundSize: {
         'dot-grid': "20px 20px",
+      },
+      animation: {
+        'marquee-left': 'marquee-left 25s linear infinite',
+        'marquee-right': 'marquee-right 25s linear infinite',
+      },
+      keyframes: {
+        'marquee-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'marquee-right': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       }
     },
   },
